@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from apps.calculator.route import router as calculator_router
-from constants import SERVER_URL, PORT, ENV
+from constants import SERVER_URL, ENV
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
